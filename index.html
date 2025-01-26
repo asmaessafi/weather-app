@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <video width="640" height="360" autoplay replay loop muted class="vid">
+        <source src="assets\video\vid.mp4" type="video/mp4">
+    </video>
+
+
+        <main class="main">
+            <header class="block">
+                <input type="search" class="searchbar" id="searchbar" placeholder="  Search city  ...">
+                <i class="fa-solid fa-magnifying-glass searchbtn" id="searchbtn"></i>
+            </header>
+
+            <section id="searchCity">
+                <img src="assets\search-city.png" alt="search for a city" class="search-city">
+                <h1 style="position: absolute;bottom: 20%; margin-left: 70px;">search for a city</h1>
+            </section>
+
+            <section id="weather-container"  class="weather-container" style="display: none;">
+                <div>
+                    <div class="row1">
+                        <div class="symbol">
+                            <i class="fa-solid fa-location-dot symbols"></i>
+                            <h4 class="cityName">Tunisia</h4>
+                        </div>
+                        <div>
+                            <h5 class="date">Mon 25 Jan</h5>
+                        </div>
+                    </div>
+    
+                    <div class="row2">
+                        <div>
+                            <img src="assets\weather\clouds.svg" alt="cloudy" class="icon1">
+                        </div>
+                        <div>
+                            <h5 class="temp">25°C</h5>
+                            <h5 class="weather">Sunny</h5>
+                        </div>
+                    </div>
+    
+                    <div class="row3">
+                        <div class="symbol">
+                            <i class="fa-solid fa-wind symbols"></i>
+                            <h5 class="wind">Wind Speed  <p class="windSpeed">10km/h</p></h5>
+                        </div>
+                        <div class="symbol">
+                            <i class="fa-solid fa-droplet symbols"></i>
+                            <h5 class="humidity">Humidity  <p class="_humidity">50%</p></h5>
+                        </div>
+                    </div>
+    
+                </div>
+    
+               
+                    <section class="forecast-container"style="display:'none'">
+                        <!-- <div class="forecast-items">
+                            <h5 class="dayfor">26 Jan</h5>
+                            <img src="assets\weather\clouds.svg" alt="cloudy" class="iconfor">
+                            <h5 class="tempfor">25°C</h5>
+                        </div>
+                        <div class="forecast-items">
+                            <h5 class="dayfor">27 Jan</h5>
+                            <img src="assets\weather\clouds.svg" alt="cloudy" class="iconfor">
+                            <h5 class="tempfor">25°C</h5>
+                        </div>
+                        <div class="forecast-items">
+                            <h5 class="dayfor">28 Jan</h5>
+                            <img src="assets\weather\clouds.svg" alt="cloudy" class="iconfor">
+                            <h5 class="tempfor">25°C</h5>
+                        </div>
+                        <div class="forecast-items">
+                            <h5 class="dayfor">29 Jan</h5>
+                            <img src="assets\weather\clouds.svg" alt="cloudy" class="iconfor">
+                            <h5 class="tempfor">25°C</h5>
+                        </div>
+                        <div class="forecast-items">
+                            <h5 class="dayfor">30 Jan</h5>
+                            <img src="assets\weather\clouds.svg" alt="cloudy" class="iconfor">
+                            <h5 class="tempfor">25°C</h5>
+                        </div>
+                         -->
+                    </section>
+    
+            </section>
+
+            <section id="notFound"style="display: none;"><img src="assets\not-found.png" alt="not_found" class="notfound">
+            <div class="notfound-text">
+            <h1>City Not Found</h1>
+            <h2>Please write a correct city name</h2>
+            </div>
+        </section>
+        </main>
+
+
+
+    <script src="script.js" defer></script>
+</body>
+
+</html>
