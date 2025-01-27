@@ -85,7 +85,10 @@ async function updateforcastinfos(city) {
     forecastContainer.innerHTML='';
 
     fetchforcast.list.forEach((day)=>{
-        if(day.dt_txt.includes(timeTaken)){
+        const dateforcast = day.dt_txt.split(' ')[0];
+
+        if (dateforcast !== todayDate && day.dt_txt.includes(timeTaken)) {
+
             console.log(day);
             const{
                 dt_txt:dateforcast,
